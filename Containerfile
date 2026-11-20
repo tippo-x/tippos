@@ -3,8 +3,8 @@ FROM scratch AS ctx
 COPY build_files /
 COPY system_files /system_files
 
-# Base Image
-FROM ghcr.io/ublue-os/bazzite:stable
+# Base Image — décision 003 : Bazzite, version KDE pour cartes NVIDIA récentes (RTX → variante « open »)
+FROM ghcr.io/ublue-os/bazzite-nvidia-open:stable
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:testing
 # FROM ghcr.io/ublue-os/aurora:stable

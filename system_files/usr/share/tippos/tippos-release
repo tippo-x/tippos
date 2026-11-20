@@ -1,0 +1,5 @@
+NAME="TippOS"
+VERSION="0.1"
+DESCRIPTION="Squelette : Bazzite NVIDIA + identité TippOS"
+BASE_IMAGE="ghcr.io/ublue-os/bazzite-nvidia-open:stable"
+HOME_URL="https://github.com/tippo-x/tippos"
