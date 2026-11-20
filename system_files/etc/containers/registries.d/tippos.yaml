@@ -1,0 +1,4 @@
+# Les signatures de TippOS sont publiées à côté de l'image (format sigstore de cosign).
+docker:
+  ghcr.io/tippo-x/tippos:
+    use-sigstore-attachments: true

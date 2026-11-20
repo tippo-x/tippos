@@ -7,9 +7,11 @@ les jeux, les périphériques et le son doivent marcher du premier coup.
 - **Principe** : TippOS ne réinvente pas ce qui marche. Elle part de la base la plus compatible pour le jeu et ajoute sa propre couche.
 - **Construction** : l'image est construite et signée automatiquement par GitHub Actions, à partir du modèle [Universal Blue image-template](https://github.com/ublue-os/image-template).
 
-> État : **v0.1, squelette.** L'image ne fait encore presque rien de plus que Bazzite ; elle sert à valider toute la chaîne de fabrication.
+> État : **v0.2.** Encore très proche de Bazzite. Nouveauté : un système TippOS vérifie la signature de chaque mise à jour TippOS et refuse une image non signée par la clé du projet.
 
-## Passer une installation Bazzite existante à TippOS
+## Installer TippOS
+
+Il n'y a pas encore d'ISO TippOS. Installer Bazzite avec son ISO officielle (variante NVIDIA, KDE), puis basculer sur TippOS :
 
 ```bash
 sudo bootc switch ghcr.io/tippo-x/tippos:latest
